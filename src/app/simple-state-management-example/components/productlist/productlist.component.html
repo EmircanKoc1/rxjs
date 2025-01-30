@@ -1,0 +1,37 @@
+<div class="productlist-container">
+    <div class="productlist">
+        <table>
+            <tr>
+                <th>Product id </th>
+                <th>Product name </th>
+                <th>Product price </th>
+                <th>Operation</th>
+            </tr>
+            @for (product of products; track $index) {
+            <tr>
+                <td>{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td><Button (click)="AddBasket(product)">AddBasket</Button></td>
+            </tr>
+            }
+        </table>
+    </div>
+    <br>
+    <div class="input-container">
+        <h2>Add New Product</h2>
+        <div class="inputs">
+            <label for="id">id</label>
+            <input type="number" name="id" #id>
+
+            <label for="name">name</label>
+            <input type="text" name="name" #name>
+
+            <label for="price">price</label>
+            <input type="number" name="price" #price>
+            <button (click)="AddProduct(id.value,name.value,price.value)">Add new product</button>
+        </div>
+    </div>
+
+
+</div>

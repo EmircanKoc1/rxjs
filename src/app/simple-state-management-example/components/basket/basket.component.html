@@ -1,0 +1,22 @@
+<div class="basket-container">
+    <h2>Basket</h2>
+   <div class="basket">
+    <table>
+        <tr>
+            <th>Product id </th>
+            <th>Product name </th>
+            <th>Product price </th>
+            <th>Operation</th>
+        </tr>
+        @for (product of basketItems; track $index) {
+        <tr>
+            <td>{{product.id}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td><button (click)="RemoveBasketItem(product)">Remove</button></td>
+        </tr>
+        }
+    </table>
+   </div>
+    <button class="clear-basket"  (click)="ClearBasket()">Clear Basket</button>
+</div>
