@@ -11,10 +11,13 @@ import { BindCallbackComponent } from "./operators/bind-callback/bind-callback.c
 import { DeferComponent } from "./operators/defer/defer.component";
 import { EmptyComponent } from "./operators/empty/empty.component";
 import { FromComponent } from "./operators/from/from.component";
+import { FromEventComponent } from "./operators/from-event/from-event.component";
+import { GenerateComponent } from "./operators/generate/generate.component";
+import { IntervalComponent } from "./operators/interval/interval.component";
 
 @Component({
   selector: 'app-root',
-  imports: [ObservableComponent, SubjectComponent, BehaviorSubjectComponent, ReplaySubjectComponent, AsyncSubjectComponent, UseComponent, AjaxComponent, BindCallbackComponent, DeferComponent, EmptyComponent, FromComponent],
+  imports: [ObservableComponent, SubjectComponent, BehaviorSubjectComponent, ReplaySubjectComponent, AsyncSubjectComponent, UseComponent, AjaxComponent, BindCallbackComponent, DeferComponent, EmptyComponent, FromComponent, FromEventComponent, GenerateComponent, IntervalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
