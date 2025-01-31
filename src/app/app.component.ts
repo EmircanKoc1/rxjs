@@ -14,10 +14,13 @@ import { FromComponent } from "./operators/from/from.component";
 import { FromEventComponent } from "./operators/from-event/from-event.component";
 import { GenerateComponent } from "./operators/generate/generate.component";
 import { IntervalComponent } from "./operators/interval/interval.component";
+import { OfComponent } from "./operators/of/of.component";
+import { RangeComponent } from "./operators/range/range.component";
+import { ThrowerrorComponent } from "./operators/throwerror/throwerror.component";
 
 @Component({
   selector: 'app-root',
-  imports: [ObservableComponent, SubjectComponent, BehaviorSubjectComponent, ReplaySubjectComponent, AsyncSubjectComponent, UseComponent, AjaxComponent, BindCallbackComponent, DeferComponent, EmptyComponent, FromComponent, FromEventComponent, GenerateComponent, IntervalComponent],
+  imports: [ObservableComponent, SubjectComponent, BehaviorSubjectComponent, ReplaySubjectComponent, AsyncSubjectComponent, UseComponent, AjaxComponent, BindCallbackComponent, DeferComponent, EmptyComponent, FromComponent, FromEventComponent, GenerateComponent, IntervalComponent, OfComponent, RangeComponent, ThrowerrorComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
