@@ -6,10 +6,11 @@ import { BehaviorSubjectComponent } from "./behavior-subject/behavior-subject.co
 import { ReplaySubjectComponent } from "./replay-subject/replay-subject.component";
 import { AsyncSubjectComponent } from "./async-subject/async-subject.component";
 import { UseComponent } from "./simple-state-management-example/components/use/use.component";
+import { AjaxComponent } from "./operators/ajax/ajax.component";
 
 @Component({
   selector: 'app-root',
-  imports: [ObservableComponent, SubjectComponent, BehaviorSubjectComponent, ReplaySubjectComponent, AsyncSubjectComponent, UseComponent],
+  imports: [ObservableComponent, SubjectComponent, BehaviorSubjectComponent, ReplaySubjectComponent, AsyncSubjectComponent, UseComponent, AjaxComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
