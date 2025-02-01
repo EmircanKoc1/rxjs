@@ -19,10 +19,14 @@ import { RangeComponent } from "./operators/range/range.component";
 import { ThrowerrorComponent } from "./operators/throwerror/throwerror.component";
 import { TimerComponent } from "./operators/timer/timer.component";
 import { IifComponent } from "./operators/iif/iif.component";
+import { CombinelastComponent } from "./operators/joincreation/combinelast/combinelast.component";
+import { ConcatComponent } from "./operators/joincreation/concat/concat.component";
+import { ForkjoinComponent } from "./operators/joincreation/forkjoin/forkjoin.component";
+import { MergeComponent } from "./operators/joincreation/merge/merge.component";
 
 @Component({
   selector: 'app-root',
-  imports: [ObservableComponent, SubjectComponent, BehaviorSubjectComponent, ReplaySubjectComponent, AsyncSubjectComponent, UseComponent, AjaxComponent, BindCallbackComponent, DeferComponent, EmptyComponent, FromComponent, FromEventComponent, GenerateComponent, IntervalComponent, OfComponent, RangeComponent, ThrowerrorComponent, TimerComponent, IifComponent],
+  imports: [ObservableComponent, SubjectComponent, BehaviorSubjectComponent, ReplaySubjectComponent, AsyncSubjectComponent, UseComponent, AjaxComponent, BindCallbackComponent, DeferComponent, EmptyComponent, FromComponent, FromEventComponent, GenerateComponent, IntervalComponent, OfComponent, RangeComponent, ThrowerrorComponent, TimerComponent, IifComponent, CombinelastComponent, ConcatComponent, ForkjoinComponent, MergeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
