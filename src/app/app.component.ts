@@ -17,10 +17,12 @@ import { IntervalComponent } from "./operators/interval/interval.component";
 import { OfComponent } from "./operators/of/of.component";
 import { RangeComponent } from "./operators/range/range.component";
 import { ThrowerrorComponent } from "./operators/throwerror/throwerror.component";
+import { TimerComponent } from "./operators/timer/timer.component";
+import { IifComponent } from "./operators/iif/iif.component";
 
 @Component({
   selector: 'app-root',
-  imports: [ObservableComponent, SubjectComponent, BehaviorSubjectComponent, ReplaySubjectComponent, AsyncSubjectComponent, UseComponent, AjaxComponent, BindCallbackComponent, DeferComponent, EmptyComponent, FromComponent, FromEventComponent, GenerateComponent, IntervalComponent, OfComponent, RangeComponent, ThrowerrorComponent],
+  imports: [ObservableComponent, SubjectComponent, BehaviorSubjectComponent, ReplaySubjectComponent, AsyncSubjectComponent, UseComponent, AjaxComponent, BindCallbackComponent, DeferComponent, EmptyComponent, FromComponent, FromEventComponent, GenerateComponent, IntervalComponent, OfComponent, RangeComponent, ThrowerrorComponent, TimerComponent, IifComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
