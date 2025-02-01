@@ -23,10 +23,13 @@ import { CombinelastComponent } from "./operators/joincreation/combinelast/combi
 import { ConcatComponent } from "./operators/joincreation/concat/concat.component";
 import { ForkjoinComponent } from "./operators/joincreation/forkjoin/forkjoin.component";
 import { MergeComponent } from "./operators/joincreation/merge/merge.component";
+import { PartitionComponent } from "./operators/joincreation/partition/partition.component";
+import { RaceComponent } from "./operators/joincreation/race/race.component";
+import { ZipComponent } from "./operators/joincreation/zip/zip.component";
 
 @Component({
   selector: 'app-root',
-  imports: [ObservableComponent, SubjectComponent, BehaviorSubjectComponent, ReplaySubjectComponent, AsyncSubjectComponent, UseComponent, AjaxComponent, BindCallbackComponent, DeferComponent, EmptyComponent, FromComponent, FromEventComponent, GenerateComponent, IntervalComponent, OfComponent, RangeComponent, ThrowerrorComponent, TimerComponent, IifComponent, CombinelastComponent, ConcatComponent, ForkjoinComponent, MergeComponent],
+  imports: [ObservableComponent, SubjectComponent, BehaviorSubjectComponent, ReplaySubjectComponent, AsyncSubjectComponent, UseComponent, AjaxComponent, BindCallbackComponent, DeferComponent, EmptyComponent, FromComponent, FromEventComponent, GenerateComponent, IntervalComponent, OfComponent, RangeComponent, ThrowerrorComponent, TimerComponent, IifComponent, CombinelastComponent, ConcatComponent, ForkjoinComponent, MergeComponent, PartitionComponent, RaceComponent, ZipComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
